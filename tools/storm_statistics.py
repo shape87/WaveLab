@@ -281,7 +281,7 @@ class StormStatistics(object):
         '''Plot of spectral wave energy vs. wave period in seconds over time'''
     
         #assign vars for variable name terse...ness, tersity? tersation, tersocity, tersitude
-        spectra = np.sqrt(so.stat_dictionary['Spectrum'])
+        spectra = so.stat_dictionary['Spectrum']
         freqs = so.stat_dictionary['Frequency'][0]
         fname = so.output_fname
         sea_time = so.sea_time
